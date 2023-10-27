@@ -1,0 +1,13 @@
+{% extends "service/layout.html" %}
+
+{% block body %}
+    <h1>Unit</h1>
+
+        {{ unit }}
+
+        <form>
+            {% csrf_token %}
+            {{ form.as_p }}
+        </form>
+
+{% endblock %}

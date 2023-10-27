@@ -1,0 +1,20 @@
+{% extends "service/layout.html" %}
+
+{% block body %}
+    <h1>
+        {{ profile_id.first_name }} {{ profile_id.last_name }}
+    </h1>
+    <h2>
+        {{ profile_id.phone }}
+    </h2>
+    <h3>
+        {% for unit in units %}
+        <p>
+            <a href="{% url 'unit' unit.id %}">Service</a>
+            {{ unit.address }}
+            {{ unit.brand }}             
+        </p>       
+        {% endfor %}
+    </h3>
+
+{% endblock %}
