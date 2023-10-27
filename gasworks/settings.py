@@ -32,7 +32,7 @@ GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = [os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")]
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 # Application definition
