@@ -1,2 +1,4 @@
 # gasworks
-Service tracker for customers, units and repair history on HVAC systems
+Django web application to track customers, inventory, HVAC units, service history
+
+## Deployed on Digital Ocean
